@@ -11,6 +11,14 @@
 		DCA9CD3E29867A8C009DB2F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9CD3D29867A8C009DB2F9 /* ContentView.swift */; };
 		DCA9CD4029867A8E009DB2F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA9CD3F29867A8E009DB2F9 /* Assets.xcassets */; };
 		DCA9CD4329867A8E009DB2F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA9CD4229867A8E009DB2F9 /* Preview Assets.xcassets */; };
+		DCA9CD4B29867CC2009DB2F9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9CD4A29867CC2009DB2F9 /* NetworkService.swift */; };
+		DCA9CD4E29867E9E009DB2F9 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9CD4D29867E9E009DB2F9 /* SearchViewModel.swift */; };
+		DCA9CD5129867EF3009DB2F9 /* SearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9CD5029867EF3009DB2F9 /* SearchQuery.swift */; };
+		DCA9CD5329868145009DB2F9 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9CD5229868145009DB2F9 /* Media.swift */; };
+		DCA9CD5629868930009DB2F9 /* SearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9CD5529868930009DB2F9 /* SearchListView.swift */; };
+		DCA9CD582986902A009DB2F9 /* SearchItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9CD572986902A009DB2F9 /* SearchItemView.swift */; };
+		DCA9CD5A2986A970009DB2F9 /* MediaDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9CD592986A970009DB2F9 /* MediaDetailsView.swift */; };
+		DCA9CD5D29870A0F009DB2F9 /* DebouncedOnChange in Frameworks */ = {isa = PBXBuildFile; productRef = DCA9CD5C29870A0F009DB2F9 /* DebouncedOnChange */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,13 @@
 		DCA9CD3D29867A8C009DB2F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DCA9CD3F29867A8E009DB2F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCA9CD4229867A8E009DB2F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCA9CD4A29867CC2009DB2F9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DCA9CD4D29867E9E009DB2F9 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		DCA9CD5029867EF3009DB2F9 /* SearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQuery.swift; sourceTree = "<group>"; };
+		DCA9CD5229868145009DB2F9 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		DCA9CD5529868930009DB2F9 /* SearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
+		DCA9CD572986902A009DB2F9 /* SearchItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemView.swift; sourceTree = "<group>"; };
+		DCA9CD592986A970009DB2F9 /* MediaDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA9CD5D29870A0F009DB2F9 /* DebouncedOnChange in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +67,11 @@
 		DCA9CD3A29867A8C009DB2F9 /* HomeAssaimentMH */ = {
 			isa = PBXGroup;
 			children = (
+				DCA9CD5429868918009DB2F9 /* View */,
+				DCA9CD4F29867EE5009DB2F9 /* Model */,
+				DCA9CD4C29867E89009DB2F9 /* ViewModel */,
+				DCA9CD4929867CAD009DB2F9 /* Network */,
 				DCA9CD3B29867A8C009DB2F9 /* HomeAssaimentMHApp.swift */,
-				DCA9CD3D29867A8C009DB2F9 /* ContentView.swift */,
 				DCA9CD3F29867A8E009DB2F9 /* Assets.xcassets */,
 				DCA9CD4129867A8E009DB2F9 /* Preview Content */,
 			);
@@ -65,6 +84,42 @@
 				DCA9CD4229867A8E009DB2F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCA9CD4929867CAD009DB2F9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9CD4A29867CC2009DB2F9 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DCA9CD4C29867E89009DB2F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9CD4D29867E9E009DB2F9 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DCA9CD4F29867EE5009DB2F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9CD5029867EF3009DB2F9 /* SearchQuery.swift */,
+				DCA9CD5229868145009DB2F9 /* Media.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCA9CD5429868918009DB2F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9CD3D29867A8C009DB2F9 /* ContentView.swift */,
+				DCA9CD5529868930009DB2F9 /* SearchListView.swift */,
+				DCA9CD572986902A009DB2F9 /* SearchItemView.swift */,
+				DCA9CD592986A970009DB2F9 /* MediaDetailsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +138,9 @@
 			dependencies = (
 			);
 			name = HomeAssaimentMH;
+			packageProductDependencies = (
+				DCA9CD5C29870A0F009DB2F9 /* DebouncedOnChange */,
+			);
 			productName = HomeAssaimentMH;
 			productReference = DCA9CD3829867A8C009DB2F9 /* HomeAssaimentMH.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +169,9 @@
 				Base,
 			);
 			mainGroup = DCA9CD2F29867A8C009DB2F9;
+			packageReferences = (
+				DCA9CD5B29870A0F009DB2F9 /* XCRemoteSwiftPackageReference "DebouncedOnChange" */,
+			);
 			productRefGroup = DCA9CD3929867A8C009DB2F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +199,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA9CD3E29867A8C009DB2F9 /* ContentView.swift in Sources */,
+				DCA9CD5A2986A970009DB2F9 /* MediaDetailsView.swift in Sources */,
+				DCA9CD4B29867CC2009DB2F9 /* NetworkService.swift in Sources */,
+				DCA9CD5329868145009DB2F9 /* Media.swift in Sources */,
+				DCA9CD5129867EF3009DB2F9 /* SearchQuery.swift in Sources */,
+				DCA9CD5629868930009DB2F9 /* SearchListView.swift in Sources */,
+				DCA9CD4E29867E9E009DB2F9 /* SearchViewModel.swift in Sources */,
 				DCA9CD3C29867A8C009DB2F9 /* HomeAssaimentMHApp.swift in Sources */,
+				DCA9CD582986902A009DB2F9 /* SearchItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +407,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCA9CD5B29870A0F009DB2F9 /* XCRemoteSwiftPackageReference "DebouncedOnChange" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Tunous/DebouncedOnChange";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCA9CD5C29870A0F009DB2F9 /* DebouncedOnChange */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCA9CD5B29870A0F009DB2F9 /* XCRemoteSwiftPackageReference "DebouncedOnChange" */;
+			productName = DebouncedOnChange;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCA9CD3029867A8C009DB2F9 /* Project object */;
 }
